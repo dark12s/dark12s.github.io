@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS incidencias;
+USE incidencias;
+
+CREATE TABLE IF NOT EXISTS alumnos (
+    matricula VARCHAR(20) PRIMARY KEY,
+    nombre VARCHAR(100),
+    grado INT,
+    grupo VARCHAR(5)
+);
+
+CREATE TABLE IF NOT EXISTS incidencias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    matricula VARCHAR(20),
+    nombre VARCHAR(100),
+    tipo VARCHAR(50),
+    descripcion TEXT,
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP
+);

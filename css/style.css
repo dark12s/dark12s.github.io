@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+form input, form textarea, form select, button {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
